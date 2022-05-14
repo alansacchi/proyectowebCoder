@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Roboto+Slab:wght@300&family=Water+Brush&display=swap');
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+
+header{ 
+    background-color: hsl(0, 0%, 0%,95%);
+    border: 1px solid greenyellow;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    
+}
+
+ nav ul {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+
+
+
+   
+}
+
+
+main {
+    border: 2px solid black;
+    width: 100%;
+
+}
+
+
+ nav ul li {
+    list-style-type: none; /*para eliminiar los bulets */
+    width: 8%;
+    
+    
+}
+
+nav ul li a {
+    text-decoration: none; 
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    
+    
+}
+
+ .eslogan {
+     background-image:url("../img/localFoto.jpeg");
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: 100%;
+     width: 100%;
+     height: 390px;
+     padding-top: 10px;
+     display: flex;
+     justify-content: center;
+     border: 1px solid black;
+     margin-top: 105px;
+     }
+
+.titulo {
+    font-family:'Tapestry';
+    font-size: 52px;
+    color:black;
+    font-weight:bold;
+    position: relative;
+    bottom: 10px;
+    padding-left: 90px;
+    padding-top: 20px;
+    padding-right: 3px;
+ 
+    
+}
+
+.iconCustomcolor{
+fill: rgb(124, 188, 28);/*para darle color a las dibujos svg*/
+}
+
+.contenedoresh3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(222, 222, 222, 0.937);
+    border: 1px solid black;
+ 
+}
+
+.contenedores1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 50px;
+    width: 250px;
+    height: 250px;
+    text-align: justify;
+}
+
+.cajacontenedoresimg{
+    text-align: center;
+}
+
+.inicioh3{
+    text-align: center;
+
+}
+
+#envio{
+    position: relative;
+    bottom: 20px;
+}
+
+#parrafoenvio{
+    position: relative;
+    bottom: 50px;
+}
+
+#parrafomediodepago{
+    position: relative;
+    bottom: 15px;
+}
+
+.productos{
+display: flex;
+justify-content:space-around;
+}
+
+.productosmasvendidos{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+
+ footer { 
+     background-color:black;
+     font-style:'Water Brush';
+     color: white;
+     font-family: 'Roboto Slab', serif;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border: 2px solid greenyellow;
+     height: 200px;
+     border: 1px solid white;
+     margin-top: 5px;
+     margin-bottom: 0;
+
+ }
+
+ footer h3 {
+     border-bottom: 2px solid white;
+     font-size: bold;
+     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+
+ }
+
+ footer p {
+     font-family:'Oswald'
+
+ }
+
+ .articlefotter{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     align-items: center;
+     height: 200px;
+     width: 350px;
+   
+
+ }
+
+#emojis{ /* falta darle estilos */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.diasdeatencion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* GRIDS 
+
+Primero debo general una caja que contenga sea padre de las princiaples secciones, generalmente usamos un div para flexibilizarlos. Siempre con class para darle el formato que deseamos
+
+elementos principales para ubicarlos y distribuirlos y luego las cajas que podremos dentro de ella poder organizarlas con flex
+
+display: gird --> Lo mejor y mas simple es trabajar con 4 columnas por un tema de responsive.
+grid-template-columns: Debemos indicar el valor de la medida que querramos utilizar. (medida recomendada: fr (fracción)
+grid-template-rows
+
+*/
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+.classpadre {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 6px;
+    grid-row-gap: 5px;
+    grid-template-areas: 
+    "carpa jardineria"
+    "carpa jardineria"
+    "carpa ferti"
+    "smokeshop ferti"
+    "smokeshop ferti";
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin: auto;
+    height:auto;
+    background-color: whitesmoke;
+    width: 88%;
+    padding-top: 20px;
+    padding-right: 40px;
+    
+}
+
+
+
+
+.cajagridcarpa{
+    width: auto;
+    height: auto;
+    grid-area: carpa;
+
+}
+
+.cajagridjardineria{
+    width: auto;
+    height: auto;
+    grid-area: jardineria;
+
+}
+
+.cajagridsmokeshop{
+    width: auto;
+    height: auto;
+    grid-area: smokeshop;
+
+}
+
+.cajagridferti{
+    width: auto;
+    height: auto;
+    grid-area: ferti;
+
+}
+
+.buscarporcategoria{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+
+}
+
+
+#imgCarpa{
+    height: 450px;
+    width: 750px;
+
+}
+
+#imgFertilizante{
+    height: 455px; 
+    width: 850px;
+    
+  
+}
+
+#imgSmokeshop{
+    height: 300px ;
+    width: 750px;
+   
+}
+
+#imgJardineria{
+    height: 300px;
+    width: 850px;
+  
+    
+}
+
+
+.div{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    
+}
+
+.caja{
+    border: 1px solid black;
+    height: 200px;
+    width: 200px;
+}
+
+.div{
+    margin-top: 150px;
+}
+
+
+.box{
+    border-radius: 5px;
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+}
+
+.box1{
+    background-color: black;
+}
+
+.box2{
+    background-color: blue;
+    transition-property: all;
+    transition-duration: 2s;
+    /*abreviación transition:all 2s */
+}
+
+.box:hover{ /* ponerlo en el logo para incrementar el tamaño al pasar el mouse y las imagenes de los "productos por categorias*/
+    transform: scale(4)
+}
+
+.circle1, .circle2, .circle3, .circle4, .circle5{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+
+}
+
+.circle1{
+    background-color: red;
+    transition: all 2s ease;
+} /*Curva de velocidad*/
+
+.circle2{
+    background-color: blue;
+    transition: all 2s ease-in;
+}
+
+.circle3{
+    background-color: violet;
+    transition: all 2s ease-in-out;
+}
+
+.circle4{
+    background-color: aqua;
+    transition: all 2s ease-out;
+}
+
+.circle5{
+    background-color: red;
+    transition: step-end;
+}
+
+.container-circle:hover .circle1,
+.container-circle:hover .circle2,
+.container-circle:hover .circle3,
+.container-circle:hover .circle4,
+.container-circle:hover .circle5{
+
+transform: translateX(200px);
+}
