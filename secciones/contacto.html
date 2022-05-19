@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../estilos/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/f1e1292847.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../estilos/style.css">
+    
+    
     <title>Document</title>
 </head>
 
@@ -44,146 +47,110 @@
 
     </header>
 
-    <section>
+    <div class="flex">
 
-        <h1> Contactate con nosotros </h1>
+     <section class="conteinerContacto">
 
-        <article>
+         <h1> Contactate con nosotros </h1>
 
-            <form action="#" method="#">
+         <form>
+            <div class="mb-3 d-flex flex-column  align-items-center">
 
-                <div>
+               <div class=""> 
 
-                    <label for= "Nombre">
-
-                       <input type=" text" id=" Nombre" placeholder="Nombre y apeliido">
-
-                    </label>
-
-                </div>
-
-                <div>
-
-                    <label for="Email">
-
-                      <input type="email" id="Email" placeholder="Email" required>
-
-                    </label>
+                 <label for="exampleInputEmail1" class="form-label">Email address</label>
+                 <input type="email" class="form-control w-50" id="exampleInputEmail1" aria-describedby="emailHelp">
+                 <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
 
                 </div>
+            </div>
+            <div class="mb-3 d-flex flex-column  align-items-center">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control w-50" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 d-flex flex-column  align-items-center">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control w-50" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3 d-flex flex-column  align-items-center">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control w-50" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            
+            
+            <button type="submit" class="btn btn-primary w-25 ">Enviar</button>
+          </form>
 
-                <div>
 
-                    <label for="phone">
+  </section>
 
-                      <input type="number" id="phone" placeholder="Numero de contacto">
+     <footer> <!-- Buscar el código para iconos de redes sociales y mapa. En css pongamos un selector de etiqueta para los h3 + una clase para los parrafos + un ID para los bottones-->
+             
+        <article class="articlefotter">
+           <h3> Horarios de atención</h3>
 
-                    </label>
+           <div class="diasdeatencion">
+               <p>
+                   Lunes: 11:00 - 19:00
+               </p>
+               <p>
+                   Martes: 11:00 - 19:00
+               </p>
+               <p>
+                   Miercoles: 11:00 - 19:00
+               </p>
+               <p>
+                   Jueves: 11:00 - 19:00
+               </p>
+               <p>
+                   Viernes: 11:00 - 19:00
+               </p>
+               <p>
+                   Sabado: 11:00 a 19:00
+               </p>
+               <p>
+                   Domingo: CERRADO
+               </p>
 
-                </div>
-
-                <div>
-
-                    <label for="Comentario">
-
-                       <textarea type="name" id="Comentarios" placeholder="Comentarios"></textarea>                    
-
-                    </label>
-
-                </div>
-
-                <p> Dinos tu edad</p>
-                  <div>
-
-                        <label for="+18">
-
-                          <span>+18</span>
-
-                          <input type="radio" id="+18" name="Edad" value="+18">
-
-                        </label>
-
-                  </div>
-
-                  <div>
-
-                         <label for="18 a 35">
-
-                           <span>18 a 35</span>
-
-                           <input type="radio" id="18 a 35"name="Edad" value="18 a 35">
-                    
-                        </label>
-                  </div>
-                  
-                  <div>
-
-                       <label for="35 a 70">
-
-                         <span>35 a 70</span>
-
-                         <input type="radio" id="35 a 70" name="Edad" value="35 a 70">
-
-                       </label>
-
-                  </div>
-
-                  <div>
-                      <p>Por donde nos conociste</p>
-
-                      <select name="Redes Sociales" id="Redes Sociales">
-
-                        <option value="Facebook">Facebook</option>
-
-                        <option value="Instagram">Instagram</option>
-
-                        <option value="Twitter">Twitter</option>
-
-                        <option value="Otros">Otros</option>
-
-                      </select>
-
-                  </div>
-
-                  <div>
-                      
-                      <input type="submit" value="Enviar solicitud">
-
-                  </div>
-                    
-
-                
-
-            </form>
+           </div>
 
         </article>
+           
+           <!--- Poner las secciones definidas en el waframe-->
+           
+         <article class="articlefotter">
+           
+           <h3> Nuestro local</h3>
 
-    </section>
+           <p> Ramon cabrero 1500, Lanús, Buenos Aires</p>
 
-    <footer>
-        <section>
-            <h3> Horarios de atención</h3>
+        </article> 
 
-            <p> Lunes a vieres de 10:30 a 19:30 Hs. Sabados de 10:30 a 14 HS.</p>
-        
-            <!--- Poner las secciones definidas en el waframe-->
-            <h3> Nuestro local</h3>
+           <!-- Buscar código del mapa-->
 
-            <p> Ramon cabrero 1500, Lanús, Buenos Aires</p>
+        <article class="articlefotter">
+           <h3> Encuentranos </h3>
 
-            <!-- Buscar código del mapa-->
-
-            <h3> Encuentranos </h3>
+           <div id="emojis">
 
             <h4> <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a> </h4>
             <h4> <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a></h4>
             <h4> <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a></h4>
-                
-                
+           
+           </div>
 
-        </section>
+        </article> 
 
-    </footer>
+
+
+     </footer>
+    
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
 </body>
 </html>

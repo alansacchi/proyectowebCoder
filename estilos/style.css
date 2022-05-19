@@ -39,7 +39,7 @@ main {
 
  nav ul li {
     list-style-type: none; /*para eliminiar los bulets */
-    width: 8%;
+    width: 10%;
     
     
 }
@@ -409,3 +409,12 @@ transform: translateX(200px);
 body{
     background-color: whitesmoke;
 }
+
+
+.conteinerContacto{
+    margin-top: 150px;
+    margin-bottom: 50px;
+    border: 1px solid black;
+}
+
+
